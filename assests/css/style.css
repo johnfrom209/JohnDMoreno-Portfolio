@@ -7,6 +7,7 @@
 
 body {
     background-color: var(--backgroundMain);
+    font-size: 24px;
 }
 
 :root {
@@ -23,6 +24,20 @@ h1 {
     padding: 5%;
 }
 
+h2 {
+    padding: 3%;
+    text-align: center;
+}
+
+a {
+    color: var(--backgroundDarker);
+    font-size: 20px;
+    text-size-adjust: fill;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+/* Side panel settings start here */
 .side_panel {
     width: 120px;
     display: inline-block;
@@ -54,16 +69,19 @@ h1 {
     text-align: center;
 }
 
-a {
-    color: var(--backgroundDarker);
-    font-size: 20px;
-    text-size-adjust: fill;
-    text-decoration: none;
-    /* font-weight: bold; */
+/* End Side Panel CSS */
+
+/* Start of section settings */
+.land_c {
+    display: inline-block;
+    border-bottom: #01272C solid 10px;
+    padding-bottom: 8%;
+    margin: 0 10% 0 7%;
 }
 
 .land {
     display: flex;
+    width: 100%;
     text-align: center;
     border: var(--backgroundDark) solid 5px;
     border-radius: 15px;
@@ -71,11 +89,15 @@ a {
     background-color: var(--backgroundLight);
 }
 
-.land_c {
-    display: inline-block;
-    border-bottom: #01272C solid 10px;
-    padding-bottom: 8%;
-    margin: 0 10% 0 7%;
+.land p {
+    margin-left: -90px;
+    padding: 1%;
+    text-align: left;
+    line-height: 2em;
+}
+
+.land h2 {
+    margin-left: -160px;
 }
 
 .bubble {
@@ -86,4 +108,8 @@ a {
     top: 25%;
     border-radius: 160px;
     border: #01272C solid 3px;
+}
+
+.projects_c {
+    padding-top: 8%;
 }
