@@ -20,15 +20,22 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    padding: 25px 0;
+    padding: 5%;
+}
+
+.side_panel {
+    width: 120px;
+    display: inline-block;
 }
 
 .side {
     position: fixed;
     right: 0;
-    width: 60px;
-    text-align-last: right;
-
+    width: 130px;
+    text-align-last: center;
+    max-height: fit-content;
+    padding-left: 1%;
+    border-left: solid var(--backgroundDarker) 5px;
 }
 
 .side ul {
@@ -36,9 +43,47 @@ h1 {
     /* border: solid 5px; */
     border-left: var(--backgroundDarker) solid 5px;
     border-top: var(--backgroundDarker) solid 5px;
-    ;
     border-bottom: var(--backgroundDarker) solid 5px;
-    ;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    background-color: var(--backgroundLight);
+}
+
+.side ul li {
+    padding: 8px;
+    text-align: center;
+}
+
+a {
+    color: var(--backgroundDarker);
+    font-size: 20px;
+    text-size-adjust: fill;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+.land {
+    display: flex;
+    text-align: center;
+    border: var(--backgroundDark) solid 5px;
+    border-radius: 15px;
+    height: 400px;
+    background-color: var(--backgroundLight);
+}
+
+.land_c {
+    display: inline-block;
+    border-bottom: #01272C solid 10px;
+    padding-bottom: 8%;
+    margin: 0 10% 0 7%;
+}
+
+.bubble {
+    position: relative;
+    /* width: 200px; */
+    max-height: 200px;
+    left: -105px;
+    top: 25%;
+    border-radius: 160px;
+    border: #01272C solid 3px;
 }
