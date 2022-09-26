@@ -110,7 +110,7 @@ a {
     max-height: 200px;
     left: -105px;
     top: 25%;
-    border-radius: 160px;
+    border-radius: 50%;
     border: #01272C solid 8px;
 }
 
@@ -221,6 +221,7 @@ a {
     box-shadow: 10px 20px 5px #4C7D84;
 }
 
+/* laptops/desktops */
 @media (max-width: 1200px) {
 
     /* just removes the small border on left of side links */
@@ -229,6 +230,7 @@ a {
     }
 }
 
+/* tablets */
 @media (max-width:992px) {
 
     /* limit the side to 100px */
@@ -259,6 +261,7 @@ a {
     }
 }
 
+/* phones */
 @media (max-width:600px) {
 
     h1 {

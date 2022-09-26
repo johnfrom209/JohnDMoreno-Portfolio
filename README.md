@@ -28,7 +28,7 @@ Here is the link to look see how I built the webpage with HTML and CSS.
 
 This is a webpage for viewing. Refer to the image below for the final product.
 
-![Screenshot of the website](./assests/images/JDMPortfolio.png)
+![Screenshot of the website](./assests/images/JDMPortfolio1.png.png)
 
 ## Credits
 
