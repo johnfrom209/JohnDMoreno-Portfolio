@@ -22,13 +22,15 @@ I went with a fixed nav bar to the side of the screen for desktop. Here is what 
 No installation required. Simply go to github page for viewing.
 
 Here is the link to look see how I built the webpage with HTML and CSS.
-[Github Page](https://github.com/johnfrom209/JohnDMoreno-Portfolio)
+[Github Repo](https://github.com/johnfrom209/JohnDMoreno-Portfolio)
+
+[Deployed Page](https://johnfrom209.github.io/JohnDMoreno-Portfolio/)
 
 ## Usage
 
 This is a webpage for viewing. Refer to the image below for the final product.
 
-![Screenshot of the website](./assests/images/JDMPortfolio1.png.png)
+![Screenshot of the website](./assests/images/JDMPortfolio1.png)
 
 ## Credits
 
