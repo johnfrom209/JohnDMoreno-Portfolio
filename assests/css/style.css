@@ -117,7 +117,8 @@ a {
 .projects_c .bubble {
     position: relative;
     top: -220px;
-    left: 43%;
+    left: 38%;
+    max-width: 300px;
 }
 
 .projects_c {
@@ -140,9 +141,9 @@ a {
     grid-template-columns: 1fr 1fr;
 }
 
+/* capstone display is larger and want it in the middle */
 .capstone {
     display: flex;
-    /* width: 100%; */
     justify-content: space-around;
 }
 
@@ -204,4 +205,8 @@ a {
 .footer ul li {
     justify-content: center;
     display: inline-block;
+}
+
+.footer img {
+    max-width: 50px;
 }
