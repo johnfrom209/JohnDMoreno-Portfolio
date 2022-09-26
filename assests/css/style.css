@@ -111,7 +111,7 @@ a {
     left: -105px;
     top: 25%;
     border-radius: 160px;
-    border: #01272C solid 3px;
+    border: #01272C solid 8px;
 }
 
 /* picture for Projects, shares some properties with the about me bubble */
@@ -219,4 +219,103 @@ a {
 .card_c .card img:hover,
 .capstone img:hover {
     box-shadow: 10px 20px 5px #4C7D84;
+}
+
+@media (max-width: 1200px) {
+
+    /* just removes the small border on left of side links */
+    .side {
+        border-left: none;
+    }
+}
+
+@media (max-width:992px) {
+
+    /* limit the side to 100px */
+    .side {
+        width: 100px;
+    }
+
+    /* move the selfie to the top middle */
+    .land img {
+        top: -195px;
+        left: 38%;
+        max-width: 300px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        margin-bottom: 150px;
+    }
+
+    .land_c,
+    .land p {
+        margin-bottom: 10%;
+        font-size: 1.4rem;
+    }
+
+    .card_c {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:600px) {
+
+    h1 {
+        margin-top: 10%;
+    }
+
+    .land_c p {
+        font-size: 1.1rem;
+    }
+
+    .land_c {
+        margin-bottom: 30%;
+    }
+
+    .side {
+        display: inline-block;
+        width: 100%;
+        max-height: 25px;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .side ul {
+        border: solid #01272C 5px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .side ul li {
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .projects_c .bubble {
+        border-radius: 50%;
+        width: 200px;
+        left: 28%;
+        top: -180px;
+    }
+
+    /* .projects_c h2 {
+        margin: -25px;
+    } */
+
+    .capstone a img {
+        width: 100%;
+    }
+
+    .card_c {
+        grid-template-columns: 1fr;
+    }
 }
