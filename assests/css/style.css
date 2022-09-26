@@ -37,6 +37,8 @@ a {
     /* font-weight: bold; */
 }
 
+
+
 /* Side panel settings start here */
 .side_panel {
     width: 120px;
@@ -100,6 +102,7 @@ a {
     margin-left: -160px;
 }
 
+/* picture for About Me */
 .bubble {
     position: relative;
     /* width: 200px; */
@@ -110,6 +113,95 @@ a {
     border: #01272C solid 3px;
 }
 
+/* picture for Projects, shares some properties with the about me bubble */
+.projects_c .bubble {
+    position: relative;
+    top: -220px;
+    left: 43%;
+}
+
 .projects_c {
+    border: #01272C solid 3px;
+    margin-top: 8%;
     padding-top: 8%;
+    padding-bottom: 8%;
+    width: 83%;
+    display: block;
+    margin-left: 7%;
+    margin-bottom: 8%;
+}
+
+.projects_c h2 {
+    margin-top: -200px;
+}
+
+.card_c {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.capstone {
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-around;
+}
+
+.capstone img {
+    width: 700px;
+    max-height: 500px;
+}
+
+.p_detail h5 {
+    /* display: ; */
+    position: relative;
+    bottom: 50px;
+    left: 5px;
+    width: 25%;
+    background-color: #1A535B;
+    border-radius: 8px 8px 0 0;
+}
+
+.p_detail h6 {
+    position: relative;
+    bottom: 50px;
+    left: 5px;
+    width: 25%;
+    background-color: #1A535B;
+    border-radius: 0 0 8px 8px;
+}
+
+
+
+.info_head {
+    border-radius: 8px;
+}
+
+.card_c {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2%;
+}
+
+.card {
+    padding: 2%;
+}
+
+.card img {
+    width: 100%;
+}
+
+/* footer properties */
+.footer {
+    justify-content: center;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-top: #01272C solid 10px;
+    padding: 0 7% 0 7%;
+}
+
+.footer ul li {
+    justify-content: center;
+    display: inline-block;
 }
