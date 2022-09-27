@@ -1,3 +1,5 @@
+/* If you are looking for comments please scroll down */
+/* universal: zero out padding and margin; set box sizing to border box; font family sans serif */
 * {
     padding: 0;
     margin: 0;
@@ -5,11 +7,13 @@
     font-family: sans-serif;
 }
 
+/* set background color of the entire body, and increase the font size */
 body {
     background-color: var(--backgroundMain);
     font-size: 24px;
 }
 
+/* this contains the var for all the colors I used in this project */
 :root {
     --backgroundMain: #1A535B;
     --backgroundLighter: #4C7D84;
@@ -18,17 +22,20 @@ body {
     --backgroundDarker: #01272C;
 }
 
+/* have h1 set to flex and center it. adds padding */
 h1 {
     display: flex;
     justify-content: center;
     padding: 5%;
 }
 
+/* adds padding, and text align center */
 h2 {
     padding: 3%;
     text-align: center;
 }
 
+/* all elements of a set color and font size. text decoration to none */
 a {
     color: var(--backgroundDarker);
     font-size: 20px;
@@ -39,12 +46,16 @@ a {
 
 
 
-/* Side panel settings start here */
+/* ------------------Side panel settings start here--------------------- */
+/* setting width size and display to inline block */
 .side_panel {
     width: 120px;
     display: inline-block;
 }
 
+/* I wanted a fixed position for my side nav  */
+/* I gave it a fixed position to the right adding in some padding */
+/* gave it a border only on the left side to split it from the main sections of the page */
 .side {
     position: fixed;
     right: 0;
@@ -55,6 +66,8 @@ a {
     border-left: solid #01272C 5px;
 }
 
+/* removed style from the list */
+/* since the nav is on the right I put a border on the left, top, and bottom and rounded the edges; */
 .side ul {
     list-style: none;
     /* border: solid 5px; */
@@ -66,14 +79,18 @@ a {
     background-color: var(--backgroundLight);
 }
 
+/* added padding and set text to align in the center */
 .side ul li {
     padding: 8px;
     text-align: center;
 }
 
-/* End Side Panel CSS */
+/*------------------ End Side Panel CSS------------------- */
 
-/* Start of section settings */
+/*------------- Start of About Me settings----------------- */
+/* this is the container for the landing content so I set it to inline block */
+/* gave it a border on the bottom and padding on the bottom */
+/* margin is there to adjust it away from the side nav */
 .land_c {
     display: inline-block;
     border-bottom: #01272C solid 10px;
@@ -81,6 +98,10 @@ a {
     margin: 0 10% 0 7%;
 }
 
+/* inside the landing container I set display to flex, width 100%, text align to center */
+/* boder all around and rounded the edges */
+/* I didn't want the section to be to big in height so I set that to 400px */
+/* gave it a background color using a var from the root */
 .land {
     display: flex;
     width: 100%;
@@ -91,6 +112,9 @@ a {
     background-color: var(--backgroundDark);
 }
 
+/* this edits the p tag inside of the .land class */
+/* since the img is above the container I adjusted that here aswell */
+/* text aligned to left, set line height to 2em and font size to 1.5rem */
 .land p {
     margin-left: -90px;
     padding: 1%;
@@ -99,11 +123,15 @@ a {
     font-size: 1.5rem;
 }
 
+/* this edits any h2 in the .land class */
+/* gave it a negative left margin to line up towards the middle of the page with the img*/
 .land h2 {
     margin-left: -160px;
 }
 
-/* picture for About Me */
+/* picture for About Me, but will share settings with the projects img */
+/* I wanted this positioned towards the middle of the page along with the h2 */
+/* gave it a border radius of 50% to seem rounded but width and height are set differently */
 .bubble {
     position: relative;
     /* width: 200px; */
@@ -115,45 +143,49 @@ a {
 }
 
 /* picture for Projects, shares some properties with the about me bubble */
+/* adjusted differetly since the img is a bit bigger */
 .projects_c .bubble {
-    position: relative;
+    /* position: relative; */
     top: -220px;
     left: 38%;
     max-width: 300px;
 }
 
+/* ----------End of Land properties-------------------- */
+
+/* -----------Start of Projects Section-------------------- */
+/* created border around the Section */
+/* added margin and padding to space it out */
+/* display of block because I don't want it sharing space with anything else */
 .projects_c {
     border: #01272C solid 5px;
     background-color: var(--backgroundDark);
-    margin-top: 8%;
+    margin: 8% 0 8% 7%;
     padding-top: 8%;
     width: 83%;
     display: block;
-    margin-left: 7%;
-    margin-bottom: 8%;
     border-radius: 8px;
 }
 
+/* adjusted the h2 inside of projects container */
 .projects_c h2 {
     margin-top: -200px;
 }
 
-.card_c {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-/* capstone display is larger and want it in the middle */
+/* capstone display is larger and I want it in the middle, spaced out evenly */
 .capstone {
     display: flex;
     justify-content: space-around;
 }
 
+/* since its flex I need to constrain the img size */
 .capstone img {
     width: 700px;
     max-height: 500px;
 }
 
+/* This is the tag to describe the skills that the project used  */
+/* I wanted it to be towards the bottom left */
 .p_detail h5 {
     position: relative;
     bottom: 50px;
@@ -164,6 +196,7 @@ a {
     font-size: 1rem;
 }
 
+/* Same this as the h5, I wanted it to be at the bottom left */
 .p_detail h6 {
     position: relative;
     bottom: 50px;
@@ -174,10 +207,8 @@ a {
     font-size: 1rem;
 }
 
-.info_head {
-    border-radius: 8px;
-}
-
+/* set the container for cards to be a grid */
+/* the 1rf 1fr 1fr sets to three equal columns */
 .card_c {
     display: grid;
     width: 100%;
@@ -185,17 +216,25 @@ a {
     padding: 2%;
 }
 
+/* transition for the hover effect */
 .card {
     padding: 2%;
     transition: all 0.5s ease-in-out;
 
 }
 
+/* img to fill the grid container */
 .card img {
     width: 100%;
 }
 
-/* footer properties */
+/* ---------------------End projects properties----------------- */
+
+
+/*--------------------- footer properties-------------------------*/
+/* display block I don't want it to share space with other content */
+/* fill the width and justify the content to center screen */
+/* created a border above */
 .footer {
     justify-content: center;
     display: block;
@@ -205,15 +244,19 @@ a {
     padding: 0 7% 0 7%;
 }
 
+/* the ul li I wanted to share the container but space it out */
 .footer ul li {
     justify-content: center;
     display: inline-block;
     padding: 1%;
 }
 
+/* limit the max width of the img to 50px */
 .footer img {
     max-width: 50px;
 }
+
+/* -----------------End Footer Propterties-------------------- */
 
 /* adding in hover effect for cards */
 .card_c .card img:hover,
@@ -243,7 +286,7 @@ a {
         top: -195px;
         left: 38%;
         /* max-width: 300px; */
-        width: 120px;
+        width: 200px;
         height: 200px;
         border-radius: 50%;
     }
@@ -252,12 +295,14 @@ a {
         margin-bottom: 150px;
     }
 
+    /* adjusted the font size to fit the smaller container */
     .land_c,
     .land p {
         margin-bottom: 10%;
         font-size: 1.4rem;
     }
 
+    /* set grid to two columns */
     .card_c {
         grid-template-columns: 1fr 1fr;
     }
@@ -270,14 +315,17 @@ a {
         margin-top: 10%;
     }
 
+    /* adjusting the size of the font */
     .land_c p {
         font-size: 1.1rem;
     }
 
+    /* pushing the projects container away */
     .land_c {
         margin-bottom: 30%;
     }
 
+    /* moving the side bar to the top of the page */
     .side {
         display: inline-block;
         width: 100%;
@@ -290,14 +338,16 @@ a {
         z-index: 1;
     }
 
+    /* more centering and add border */
     .side ul {
         border: solid #01272C 5px;
         text-align: center;
         justify-content: center;
         align-items: center;
-
+        border-radius: 8px;
     }
 
+    /* change this to line up side by side instead of stacked ontop of each other */
     .side ul li {
         display: inline-block;
         text-align: center;
@@ -305,17 +355,21 @@ a {
 
     }
 
+    /* adjusting the position of the projects img */
     .projects_c .bubble {
         border-radius: 50%;
         width: 200px;
         left: 28%;
         top: -180px;
+        margin-bottom: 5px;
     }
 
+    /* size of img to fill container */
     .capstone a img {
         width: 100%;
     }
 
+    /* grid is set to have one column */
     .card_c {
         grid-template-columns: 1fr;
     }
