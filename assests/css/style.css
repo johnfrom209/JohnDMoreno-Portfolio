@@ -373,4 +373,9 @@ a {
     .card_c {
         grid-template-columns: 1fr;
     }
+
+    .p_detail h5,
+    .p_detail h6 {
+        width: 55%;
+    }
 }
