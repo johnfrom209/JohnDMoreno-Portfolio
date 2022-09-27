@@ -261,7 +261,9 @@ a {
 /* adding in hover effect for cards */
 .card_c .card img:hover,
 .capstone img:hover {
-    box-shadow: 10px 20px 5px #4C7D84;
+    /* box-shadow: 10px 20px 5px #4C7D84; */
+    /* the one below surrounds the whole card */
+    box-shadow: 0 0 80px #4C7D84;
 }
 
 /* laptops/desktops */
